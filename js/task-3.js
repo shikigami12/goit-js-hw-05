@@ -5,7 +5,7 @@
  * @param {Object} users[].friends - The array of friends associated with a user object.
  * @returns {Object[]} A new array where user objects are sorted by descending friend count.
  */
-const sortByDescendingFriendCount = users => users.sort((a, b) => b.friends.length - a.friends.length);
+const sortByDescendingFriendCount = users => users.toSorted((a, b) => b.friends.length - a.friends.length);
 
 
 console.log(sortByDescendingFriendCount([{
